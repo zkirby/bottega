@@ -83,12 +83,14 @@ body, html {
 	    top: -11.7%;
 	    left: -115%;
 	    transition: 0.4s;
+	    opacity: 0.8;
 
     	.nav-item {
     		font-size: 42px;
     		padding-top: 46px;
     		cursor: pointer;
     		opacity: 0.8;
+    		z-index: 100;
 
     		&:hover {
     			opacity: 1;
