@@ -91,6 +91,8 @@ body, html {
     		cursor: pointer;
     		opacity: 0.8;
     		z-index: 100;
+            top: -13px;
+            position: relative;
 
     		&:hover {
     			opacity: 1;
@@ -98,6 +100,34 @@ body, html {
     		}
     	}
     }
+}
+
+// About Style
+.about-container {
+    background: #F9F9F9;
+    height: 400px;
+    border-top: 5px solid maroon;
+
+    .about-header {
+        position: relative;
+        font-size: 65px;
+        top: 21%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-content {
+        font-size: 25px;
+        top: 23%;
+        left: 8%;
+        width: 87%;
+        position: relative;
+    }
+}
+
+.junk {
+    position: relative;
+    height: 1000px;
 }
 
 
