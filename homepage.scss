@@ -1,208 +1,189 @@
+/* Colors */
+$background: #120E0B;
+
+/* Body Mods */
 body, html {
-	// font-family: 'Roboto', sans-serif;
-	font-family: 'Nunito', sans-serif;
-	// font-family: 'Roboto Mono', monospace;
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	height: 100%;
-	background: black;
+	background-color: $background;
+	// font-family: 'Roboto', sans-serif;
+	//font-family: 'Nunito', sans-serif;
+	 font-family: 'Roboto Mono', monospace;
 }
 
 
-// Landing Style
-#landing-container {
-    text-align: center;
-    color: white;
-    height: 100%;
-
-    .bg-parent {
-    	width: 100%;
-    	height: 100%;
-    	position: absolute;
-
-    	.bg-pic {
-    		object-fit: cover;
-    		height: 100%;
-    		width: 100%;
-    	}
-    }
-
-	.overlay {
-		position: absolute;
-	    left: 0px;
-	    right: 0px;
-	    height: 100%;
-	    width: 100%;
-	    opacity: 0.4;
-	    z-index: 10;
-	    background: black;
-	}
-	.text-container {
-		position: relative;
-    	transform: translateY(-50%);
-    	top: 50%;
-    	z-index: 20;
-
-		.big-text {
-			font-weight: bold;
-			font-size: 100px;
-			opacity: 0;
-			animation: fadein 0.5s ease-in 0s 1;
-      		animation-fill-mode: forwards;
-      		transition: 0.4s;
-      		cursor: pointer;
-
-      		&:hover {
-      			font-size: 110px;
-      		}
-		}
-		.small-text {
-			font-size: 26px;
-			opacity: 0;
-			animation: fadein1 0.5s ease-in 0.3s 1;
-      		animation-fill-mode: forwards;
-		}
-	}
-}
-
-// Nav Style
-.nav-container {
-	position: fixed;
-    top: 10px;
-    left: 10px;
-    height: 100%;
-    color: white;
-    z-index: 21;
-
-    #nav-show {
-    	background: black;
-	    height: 100%;
-	    width: 300px;
-	    text-align: center;
-	    position: relative;
-	    top: -11.7%;
-	    left: -115%;
-	    transition: 0.4s;
-	    opacity: 0.8;
-
-    	.nav-item {
-    		font-size: 42px;
-    		padding-top: 46px;
-    		cursor: pointer;
-    		opacity: 0.8;
-    		z-index: 100;
-            top: -13px;
-            position: relative;
-
-    		&:hover {
-    			opacity: 1;
-    			font-weight: bold;
-    		}
-    	}
-    }
-}
-
-// About Style
-.about-container {
-    background: #F9F9F9;
-    height: 400px;
-    border-top: 5px solid maroon;
-
-    .about-header {
-        position: relative;
-        font-size: 65px;
-        top: 21%;
-        text-align: center;
-        width: 100%;
-    }
-
-    .about-content {
-        font-size: 25px;
-        top: 23%;
-        left: 8%;
-        width: 87%;
-        position: relative;
-    }
-}
-
-.junk {
-    position: relative;
-    height: 1000px;
-}
-
-
-// Animations 
-@keyframes fadein {
-	to {
-		opacity: 1;
-	}
-}
-@keyframes fadein1 {
-	to {
-		opacity: 0.7;
-	}
-}
-
-// Logistical Code, ignore it.
-
-.hamburger {
-	outline: none;
-	z-index: 100;
+/* Landing Page */
+.landing-body {
 	position: relative;
-	opacity: 0.5;
-}
-
-.hamburger:focus {
-	outline: none;
-}
-
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-	background-color: white !important;
-}
-
-.video-fullcontainer {
-    border-right: none;
-    border-left: none;
-    position: absolute;
+    height: 85%;
     width: 100%;
-    height: 100%;
+    color: white;
+    text-align: center;
+    display: block;
+
+    .landing-text {
+    	position: relative;
+    	transform: translateY(-50%);
+    	top: 41%;
+
+    	.big-text {
+    		font-size: 120px;
+    	}
+    	.small-text {
+    		font-size: 50px;
+    		opacity: 0.7;
+    	}
+    }
 }
 
-.no-video .video-container video,
-.touch .video-container video {
-    display: none;
+
+/* About Us */
+.about-body {
+	display: none;
+	background: red;
+	height: 100%;
 }
-.no-video .video-container .poster,
-.touch .video-container .poster {
-    display: block !important;
+
+
+
+
+/* Nav Bar */
+$thick : 3px;
+$pad : 0.7em;
+$extra : calc(#{$pad} * 1.2);
+$color : #f26522;
+
+
+.nav-bar {
+	width: 100%;
+    height: 15%;
 }
-.video-container {
+
+.nav-item {
+  cursor: pointer;
+  top: 50%;
+  left: 61%;
+  color: white;
+  transform: translate3d(-50%,-50%,0);
+  padding: $pad $extra;
+  display: inline-block;
+  border: $thick solid transparent;
+  position: relative;
+  font-size: 1.5em;
+  letter-spacing: 0.07em;
+  
+  .text {
+    // padding: 0 0.3em;
+    transform: translate3d(0,$pad,0);
+    display: block;
+    transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
+  }
+  
+  &:after {
     position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    /* overflow: hidden; */
-    /* background: #000; */
-}
-.video-container .poster img {
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-}
-.video-container .filter {
+    content: '';
+    bottom: -$thick;
+    left: $extra;
+    right: $extra;
+    height: $thick;
+    background: $color;
     z-index: -1;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
-}
-.video-container video {
-    //position: absolute;
-    z-index: 0;
-    bottom: 0;
-}
-.video-container video.fillWidth {
-    width: 100%;
-    height: 100%;
+    transition: 
+      transform 0.8s cubic-bezier(1,0,.37,1) 0.2s,
+      right 0.2s cubic-bezier(.04,.48,0,1) 0.6s,
+      left 0.4s cubic-bezier(.04,.48,0,1) 0.6s;
+    transform-origin: left;
+  }
+ 
 }
 
+.line {
+  position: absolute;
+  background: $color;
+  
+  &.-right,
+  &.-left {
+    width: $thick;
+    bottom: -$thick;
+    top: -$thick;
+    transform: scale3d(1,0,1);
+  }  
+  
+  &.-top,
+  &.-bottom {
+    height: $thick;
+    left: -$thick;
+    right: -$thick;
+    transform: scale3d(0,1,1);
+  }
+  
+  &.-right {
+    right: -$thick;
+    transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.23s;
+    transform-origin: top;
+  }
+  
+  &.-top {
+    top: -$thick;
+    transition: transform 0.08s linear 0.43s;
+    transform-origin: left;
+  }
+  
+  &.-left {
+    left: -$thick;
+    transition: transform 0.08s linear 0.51s;
+    transform-origin: bottom;
+  }
+  
+  &.-bottom {
+    bottom: -$thick;
+    transition: transform 0.3s cubic-bezier(1,0,.65,1.01);
+    transform-origin: right;
+  }  
+}
+
+.nav-item:hover,
+.nav-item:active {
+  
+  .text {
+    transform: translate3d(0,0,0);
+    transition: transform 0.6s cubic-bezier(.2,0,0,1) 0.4s;
+  }
+  
+  &:after {
+    transform: scale3d(0,1,1);
+    right: -$thick;
+    left: -$thick;
+    transform-origin: right;
+    transition: 
+      transform 0.2s cubic-bezier(1,0,.65,1.01) 0.17s,
+      right 0.2s cubic-bezier(1,0,.65,1.01),
+      left 0s 0.3s;
+  }
+  
+  .line {
+    transform: scale3d(1,1,1);
+    
+    &.-right {
+      transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.2s;
+      transform-origin: bottom;
+    }
+
+    &.-top {
+      transition: transform 0.08s linear 0.4s;
+      transform-origin: right;
+    }
+
+    &.-left {
+      transition: transform 0.08s linear 0.48s;
+      transform-origin: top;
+    }
+
+    &.-bottom {
+      transition: transform 0.5s cubic-bezier(0,.53,.29,1) 0.56s;
+      transform-origin: left;
+    }
+  }
+  
+}
