@@ -1,5 +1,18 @@
 /* Colors */
+
+// Scheme one
 $background: #120E0B;
+//$background: #00171F;
+
+// Scheme two 
+//$highlight: #19A8AE; // Not Bad
+$base: #FFFFFF; // Good
+//$highlight: #1883AD; // Okay
+
+// Scheme two 
+//$base: #DCDCDC;
+$highlight1: #40E0D0;
+$highlight: #f26522;
 
 /* Body Mods */
 body, html {
@@ -18,7 +31,7 @@ body, html {
 	position: relative;
     height: 85%;
     width: 100%;
-    color: white;
+    color: $base;
     text-align: center;
     display: block;
 
@@ -41,14 +54,14 @@ body, html {
 /* About Us Style */
 .about-body {
 	display: none;
-	height: 85%;
-	color: white;
+	height: 100%;
+	color: $base;
 
 	.about-descr-text {
 		width: 80%;
     	position: relative;
     	height: 20%;
-    	top: 17%;
+    	top: 14%;
     	left: 10%;
 
     	.descr-header {
@@ -61,22 +74,150 @@ body, html {
     		margin-top: 14px;
     	}
 	}
+
+	.about-team-text {
+	    position: relative;
+	    width: 80%;
+	    height: 60%;
+	    top: 55%;
+	    left: 10%;
+
+	    .team-header {
+	    	font-size: 36px;
+    		font-weight: bold;
+	    }
+
+	    .team-member {
+	    	display: inline-block;
+		    top: 20%;
+		    margin-right: 50px;
+		    position: relative;
+		    margin-top: 45px;
+		    left: 8%;
+		    text-align: center;
+
+		    .photo {
+		    	background: $base;
+			    width: 100px;
+			    height: 100px;
+			    border-radius: 100px;
+		    }
+
+		    .title {
+		    	top: -64px;
+		    	position: relative;
+		    	font-size: 25px;
+		    	left: 20px;
+		    }
+
+		    .desc {
+		    	top: -22px;
+    			position: relative;
+		    }
+	    }
+	}
+
+	.about-contact-text {
+		position: relative;
+	    width: 80%;
+	    height: 30%;
+	    top: 114%;
+	    left: 10%;
+
+	    .contact-header {
+			font-size: 36px;
+    		font-weight: bold;
+	    }
+
+	    .link-container {
+			width: 100%;
+		    height: 80%;
+		    position: relative;
+		    top: 3%;
+
+	    	.link {
+	    		background: $base;
+			    height: 100px;
+			    width: 100px;
+			    border-radius: 100px;
+			    display: inline-block;
+			    left: 22%;
+			    top: 9%;
+			    position: relative;
+			    margin-right: 42px;
+	    	}
+	    }
+	}
+
+	.divider {
+		width: 80%;
+    	background: $highlight1;
+    	height: 2px;
+    	position: relative;
+    	left: 10%;
+	}
+
+	#d1 {
+		top: 48%;
+	}
+
+	#d2 {
+		top: 104%;
+	}
 }
 
 /* Events Style */
 .events-body {
 	display: none;
 	height: 85%;
-	color: white;
-	text-align: center;
+	color: $base;
 
 	.events-text {
 		position: relative;
-		top: 30%;
-		font-size: 80px;
+	    top: 8%;
+	    font-size: 50px;
+	    left: 6%;
+
+	}
+
+	.events-content {
+	    height: 100%;
+	    width: 77%;
+	    position: relative;
+	    left: 14%;
+	    top: 16%;
+
+		.event {
+			display: inline-block;
+		    border: 2px solid $highlight;
+		    height: 170px;
+		    width: 170px;
+		    font-size: 29px;
+		    text-align: center;
+		    margin-top: 10px;
+
+		    .text {
+		    	position: relative;
+    			top: 25%;
+		    }
+		}
 	}
 }
 
+
+/* Apply Style */
+.apply-body {
+	display: none;
+	height: 85%;
+	color: $base;
+	text-align: center;
+
+	.apply-text {
+		position: relative;
+		top: 18%;
+		font-size: 80px;
+	}
+}
 
 
 
@@ -84,7 +225,7 @@ body, html {
 $thick : 3px;
 $pad : 0.7em;
 $extra : calc(#{$pad} * 1.2);
-$color : #f26522;
+$color : $highlight;//#f26522;
 
 
 .nav-bar {

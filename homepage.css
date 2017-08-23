@@ -12,7 +12,7 @@ body, html {
   position: relative;
   height: 85%;
   width: 100%;
-  color: white;
+  color: #FFFFFF;
   text-align: center;
   display: block; }
   .landing-body .landing-text {
@@ -28,13 +28,13 @@ body, html {
 /* About Us Style */
 .about-body {
   display: none;
-  height: 85%;
-  color: white; }
+  height: 100%;
+  color: #FFFFFF; }
   .about-body .about-descr-text {
     width: 80%;
     position: relative;
     height: 20%;
-    top: 17%;
+    top: 14%;
     left: 10%; }
     .about-body .about-descr-text .descr-header {
       font-size: 36px;
@@ -42,16 +42,108 @@ body, html {
     .about-body .about-descr-text .descr-body {
       font-size: 24px;
       margin-top: 14px; }
+  .about-body .about-team-text {
+    position: relative;
+    width: 80%;
+    height: 60%;
+    top: 55%;
+    left: 10%; }
+    .about-body .about-team-text .team-header {
+      font-size: 36px;
+      font-weight: bold; }
+    .about-body .about-team-text .team-member {
+      display: inline-block;
+      top: 20%;
+      margin-right: 50px;
+      position: relative;
+      margin-top: 45px;
+      left: 8%;
+      text-align: center; }
+      .about-body .about-team-text .team-member .photo {
+        background: #FFFFFF;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px; }
+      .about-body .about-team-text .team-member .title {
+        top: -64px;
+        position: relative;
+        font-size: 25px;
+        left: 20px; }
+      .about-body .about-team-text .team-member .desc {
+        top: -22px;
+        position: relative; }
+  .about-body .about-contact-text {
+    position: relative;
+    width: 80%;
+    height: 30%;
+    top: 114%;
+    left: 10%; }
+    .about-body .about-contact-text .contact-header {
+      font-size: 36px;
+      font-weight: bold; }
+    .about-body .about-contact-text .link-container {
+      width: 100%;
+      height: 80%;
+      position: relative;
+      top: 3%; }
+      .about-body .about-contact-text .link-container .link {
+        background: #FFFFFF;
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        display: inline-block;
+        left: 22%;
+        top: 9%;
+        position: relative;
+        margin-right: 42px; }
+  .about-body .divider {
+    width: 80%;
+    background: #40E0D0;
+    height: 2px;
+    position: relative;
+    left: 10%; }
+  .about-body #d1 {
+    top: 48%; }
+  .about-body #d2 {
+    top: 104%; }
 
 /* Events Style */
 .events-body {
   display: none;
   height: 85%;
-  color: white;
-  text-align: center; }
+  color: #FFFFFF; }
   .events-body .events-text {
     position: relative;
-    top: 30%;
+    top: 8%;
+    font-size: 50px;
+    left: 6%; }
+  .events-body .events-content {
+    height: 100%;
+    width: 77%;
+    position: relative;
+    left: 14%;
+    top: 16%; }
+    .events-body .events-content .event {
+      display: inline-block;
+      border: 2px solid #f26522;
+      height: 170px;
+      width: 170px;
+      font-size: 29px;
+      text-align: center;
+      margin-top: 10px; }
+      .events-body .events-content .event .text {
+        position: relative;
+        top: 25%; }
+
+/* Apply Style */
+.apply-body {
+  display: none;
+  height: 85%;
+  color: #FFFFFF;
+  text-align: center; }
+  .apply-body .apply-text {
+    position: relative;
+    top: 18%;
     font-size: 80px; }
 
 /* Nav Bar */
