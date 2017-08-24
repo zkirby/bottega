@@ -16,9 +16,13 @@ $(document).ready(function() {
 activate = (page, current_page) => {
 	current_page.css("display", "none");
 
+	current_page.removeClass("animate-page");
+
 	let active_page = $("." + page + "-body");
 
 	active_page.css("display", "block");
+
+	active_page.addClass("animate-page");
 
 	return active_page;
 };
