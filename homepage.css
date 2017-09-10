@@ -5,14 +5,18 @@ body, html {
   margin: 0;
   height: 100%;
   background-color: #120E0B;
-  font-family: 'Roboto Mono', monospace; }
+  font-family: 'Roboto Mono', monospace;
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none; }
 
 /* Landing Page */
 .landing-body {
   position: relative;
   height: 85%;
   width: 100%;
-  color: #FFFFFF;
+  color: #FDFDFB;
   text-align: center;
   display: block; }
   .landing-body .landing-text {
@@ -29,7 +33,7 @@ body, html {
 .about-body {
   display: none;
   height: 100%;
-  color: #FFFFFF;
+  color: #FDFDFB;
   opacity: 0;
   top: 0%;
   position: relative; }
@@ -40,7 +44,7 @@ body, html {
     top: 14%;
     left: 10%; }
     .about-body .about-descr-text .descr-header {
-      font-size: 36px;
+      font-size: 60px;
       font-weight: bold; }
       .about-body .about-descr-text .descr-header .fade {
         display: inline-block;
@@ -58,16 +62,16 @@ body, html {
         animation: fadeIn 0.5s ease-in 0.8s 1;
         animation-fill-mode: forwards; }
     .about-body .about-descr-text .descr-body {
-      font-size: 24px;
+      font-size: 22px;
       margin-top: 14px; }
   .about-body .about-team-text {
     position: relative;
     width: 80%;
     height: 60%;
-    top: 65%;
+    top: 66%;
     left: 10%; }
     .about-body .about-team-text .team-header {
-      font-size: 36px;
+      font-size: 60px;
       font-weight: bold; }
     .about-body .about-team-text .team-member {
       display: inline-block;
@@ -83,7 +87,7 @@ body, html {
       .about-body .about-team-text .team-member:hover {
         opacity: 1; }
       .about-body .about-team-text .team-member .photo {
-        background: #FFFFFF;
+        background: #FDFDFB;
         width: 100px;
         height: 100px;
         border-radius: 100px; }
@@ -99,10 +103,10 @@ body, html {
     position: relative;
     width: 80%;
     height: 30%;
-    top: 114%;
+    top: 124%;
     left: 10%; }
     .about-body .about-contact-text .contact-header {
-      font-size: 36px;
+      font-size: 60px;
       font-weight: bold; }
     .about-body .about-contact-text .link-container {
       width: 100%;
@@ -110,7 +114,7 @@ body, html {
       position: relative;
       top: 3%; }
       .about-body .about-contact-text .link-container .link {
-        background: #FFFFFF;
+        background: #FDFDFB;
         height: 100px;
         width: 100px;
         border-radius: 100px;
@@ -130,15 +134,15 @@ body, html {
     position: relative;
     left: 10%; }
   .about-body #d1 {
-    top: 60%; }
+    top: 61%; }
   .about-body #d2 {
-    top: 110%; }
+    top: 119%; }
 
 /* Events Style */
 .events-body {
   display: none;
   height: 85%;
-  color: #FFFFFF;
+  color: #FDFDFB;
   opacity: 0;
   top: 0%;
   position: relative; }
@@ -173,7 +177,7 @@ body, html {
 .house-body {
   display: none;
   height: 85%;
-  color: #FFFFFF;
+  color: #FDFDFB;
   text-align: center;
   opacity: 0;
   top: 0%;
@@ -187,7 +191,7 @@ body, html {
 .apply-body {
   display: none;
   height: 85%;
-  color: #FFFFFF;
+  color: #FDFDFB;
   text-align: left;
   opacity: 0;
   top: 0%;
@@ -225,7 +229,7 @@ body, html {
   width: 100%;
   height: 15%; }
   .nav-bar #logo {
-    background: #FFFFFF;
+    background: #FEFEFD;
     height: 45px;
     position: relative;
     width: 45px;
@@ -243,14 +247,14 @@ body, html {
 .nav-item {
   cursor: pointer;
   top: 50%;
-  left: 51%;
-  color: white;
+  left: 52%;
+  color: #FDFDFB;
   transform: translate3d(-50%, -50%, 0);
   padding: 0.7em calc(0.7em * 1.2);
   display: inline-block;
   border: 3px solid transparent;
   position: relative;
-  font-size: 1.5em;
+  font-size: 23px;
   letter-spacing: 0.07em; }
   .nav-item .text {
     transform: translate3d(0, 0.7em, 0);

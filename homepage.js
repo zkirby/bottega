@@ -1,7 +1,11 @@
 $(document).ready(function() {
 
 	// Current View
-	var current_page = $(".landing-body");;
+	var current_page = $(".landing-body");
+
+	$(".big-text").typeIt({
+		strings: "Bottega"
+	});
 
 	$(".nav-item").click(function() {
 
@@ -23,6 +27,13 @@ activate = (page, current_page) => {
 	active_page.css("display", "block");
 
 	active_page.addClass("animate-page");
+
+	if (page == "about") {
+		$('.descr-header').typeIt({
+			strings: "We Are Creators",
+			speed: 60
+		});
+	}
 
 	return active_page;
 };
